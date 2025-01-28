@@ -1,0 +1,101 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Fixed Navbar at the top of the page */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    position: fixed; /* Make navbar fixed to top */
+    top: 0; /* Align to top */
+    left: 0; /* Align to left */
+    right: 0; /* Align to right */
+    background-color: #fff; /* Set a background color */
+    z-index: 1000; /* Ensure it's on top of other content */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: Adds shadow for better visibility */
+}
+
+/* Container for the logo and nav */
+.nav-container {
+    width: 80%;
+    margin: 0 auto; /* Center the container */
+}
+
+/* Logo styles */
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+/* Nav styles */
+nav {
+    text-align: right;
+    flex: 1;
+}
+
+/* Nav list styles */
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+/* Nav list item styles */
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* Link styles */
+a {
+    text-decoration: none;
+    color: #33100b;
+}
+
+/* Link hover styles */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Main content container */
+.container {
+    width: 80%;
+    margin: 100px auto; /* Add top margin to avoid overlap with the fixed navbar */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Form styles */
+form {
+    text-align: center; /* Center the form */
+    margin-top: 20px; /* Add some spacing at the top */
+}
+
+/* Input field styles */
+input[type="text"] {
+    width: 250px;
+    padding: 10px;
+}
+
+/* Button styles */
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Button hover styles */
+button:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Header styles */
+h1, h2 {
+    text-align: center;
+}

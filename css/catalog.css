@@ -1,0 +1,182 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background: rgb(91, 89, 115);
+  background: #000000;
+}
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #212529d6;
+  padding: 10px 10px;
+  color: white;
+  top: 0;
+  position: sticky;
+  z-index: 999;
+  max-height: 70px;
+}
+
+.logo img {
+  width: 100px;
+  cursor: pointer;
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #ff5722;
+}
+/*hero section*/
+.hero {
+  width: 100%;
+  height: 500px;
+  position: relative; /* Create a relative positioning context */
+  overflow: hidden; /* Ensure the image doesn't overflow the container */
+}
+
+.hero img {
+  height: 550px;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Place the image behind other content */
+  transition: transform 0.3s ease; /* Add a transition for hover effect */
+}
+
+.hero-content {
+  display: cent;
+  flex-direction: column;
+  align-items: flex-start; /* Adjust alignment to place content at the bottom left */
+  justify-content: flex-end; /* Adjust alignment to place content at the bottom left */
+  height: 100%;
+  position: relative; /* Create a stacking context for absolute positioning */
+  padding: 20px; /* Add padding for spacing */
+  background: #00000048;
+}
+
+.hero-text {
+  color: white; /* Change color to black */
+  font-size: 50px;
+  font-weight: bold; /* Make the text bolder */
+  text-align: center; /* Adjust text alignment to center */
+  position: relative;
+  margin-top: 180px;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.hero-subtext {
+  color: white; /* Change color to black */
+  font-size: 24px;
+  font-weight: bold; /* Make the text bolder, optional based on your preference */
+  text-align: center; /* Adjust text alignment to center */
+  margin-top: 10px;
+}
+
+
+/* Add a hover effect */
+.hero:hover .hero-text {
+  transform: translateY(-20px); /* Move the text up on hover */
+}
+
+.hero:hover img {
+  transform: scale(1.1); /* Zoom in the image on hover */
+}
+
+/* art section */
+.art-gallery {
+  padding-top: 30px;
+  max-width: 95%;
+  margin: 0 auto;
+}
+.art-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.art-item {
+  flex: 0 0 30%; /* Each art piece takes up 30% of the width */
+  position: relative;
+  text-align: center;
+}
+
+.art-item img {
+  width: 100%;
+  height: 500px;
+  object-fit: fill;
+  border: 2px solid rgb(170, 161, 161);
+  transform: translateY(-10px); /* Lift the image slightly */
+  box-shadow: 0px 4px 8px rgba(255, 253, 253, 0.9); /* Add a subtle shadow for lift effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.art-item img:hover {
+  transform: translateY(-20px); /* Increase the lift on hover */
+  box-shadow: 0px 8px 16px rgba(255, 255, 255, 0.3); /* Enhance shadow on hover */
+}
+
+.art-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(202, 255, 237);
+  margin-top: 10px;
+}
+
+.bid-options {
+  display: none;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  background-color: rgba(156, 144, 149, 0.9);
+  padding: 15px;
+  transition: background-color 0.3s ease, opacity 0.3s ease, transform 0.3s ease; /* Added transform */
+  transform: translateY(100%); /* Start hidden below the art piece */
+}
+
+.bid-options #bid-button {
+  background-color: rgba(175, 219, 219, 0.575);
+}
+
+#bid-button:hover {
+  background-color: rgba(83, 145, 152, 0.619);
+  color: rgb(0, 0, 0);
+}
+
+.art-item:hover .bid-options {
+  display: block;
+  opacity: 1;
+  transform: translateY(0); /* Move up to its original position on hover */
+}

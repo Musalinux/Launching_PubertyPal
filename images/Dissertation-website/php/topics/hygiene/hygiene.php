@@ -1,0 +1,129 @@
+<?php
+include '../../conn.php'; // Include the database connection file
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../../resources/favicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="../../../css/home.css">
+    <title>Learn About Girls' Puberty</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="../../home.php" class="logo"><img src="../../../images/logopal.png" alt="Puberty Pal Logo"></a>
+        <ul class="nav-links">
+            <li>
+                <a href="../../home.php">Home</a>
+                <ul class="submenu">
+                    <li><a href="../../journey.php">Journey</a></li>
+                    <li><a href="../../parents.php">Parents</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="../../resources.php">Resource Hub</a>
+                <ul class="submenu">
+                    <li><a href="../../resources.php">All Resources</a></li>
+                    <li><a href="../../topics.php">Puberty Topics</a></li>
+                </ul>
+            </li>
+            <li><a href="../../games.php">Games</a></li>
+            <li><a href="../../charity.php">Charity</a></li>
+            <li><a href="../../aboutus.php">Say Hi!</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h1>Hygiene During Puberty</h1>
+        <p>Understanding how to take care of your body during puberty is essential. Here we explore key hygiene
+            practices every girl should know.</p>
+
+
+        <h2>Period Products</h2>
+        <div class="physical-images-container">
+            <img src="../../../images/hyg.jpg" alt="Physical Change 2">
+        </div>
+        <ul>
+            <li>
+                <h3>Sanitary napkins</h3>
+                <p>Sanitary napkins, also called pads, are absorbent liners that girls wear during their periods. They
+                    catch all the period blood and keep things clean and comfy. Plus, they come in different sizes and
+                    fun designs, making sure every girl can find her perfect fit!.</p>
+            </li>
+            <li>
+                <h3>Tampons</h3>
+                <p>Tampons are like tiny, fluffy buddies made of soft cotton that you gently place inside your vagina to
+                    absorb period blood before it goes outside. They come in cute sizes to match how much you need them
+                    to soak up!</p>
+            </li>
+            <li>
+                <h3>Menstrual Cups</h3>
+                <p>Menstrual cups are like magical, reusable cups that collect period blood inside the body. They're
+                    made of flexible silicone and come in cool colors. You just fold them, pop them in, and voila—no
+                    leaks, all smiles!</p>
+            </li>
+        </ul>
+
+        <h2>Hygiene Tips</h2>
+        <div class="images-container">
+            <img src="../../../images/hyg1.jpg" alt="emotional Change 2">
+        </div>
+        </li>
+        <ul>
+            <li>
+                <h3>Change your Pads or Tampons regularly</h3>
+                <p>It is highly important that we change our pads or tampons after every 3 to 4 hours, this keeps the
+                    bacteria away and ensures one is comfortable!</p>
+            </li>
+            <li>
+                <h3>Stay clean</h3>
+                <p>Staying clean during periods keeps you feeling fresh and comfy, like a happy little camper! It helps
+                    prevent any yucky feelings or smells, so you can stay cool and confident all day long. Plus, it's
+                    like giving yourself a mini spa treatment—self-care vibes all the way!</p>
+            </li>
+        </ul>
+
+        <h2>Handle it like a pro!</h2>
+        <div class="images-container">
+            <img src="../../../images/hyg2.jpg" alt="Physical Change 2">
+        </div>
+        </li>
+        <ul>
+            <li>
+                <h3>Managing discomfort</h3>
+                <p>Managing discomfort during your period can be as cute as cuddling up with a cozy heating pad or doing
+                    a little dance to lift your spirits. Sip on some soothing herbal tea or treat yourself to your
+                    favorite snacks to bring a smile to your face and help ease any cramps.</p>
+            </li>
+            <li>
+                <h3>Emotional well-being</h3>
+                <p>Taking care of your emotional wellbeing during your period can be like giving yourself a warm hug.
+                    Try journaling your feelings in a sparkly notebook, cuddling up with a fluffy blanket, or having a
+                    movie marathon with your favorite snacks. Remember, it's okay to pamper yourself and take things at
+                    your own pace!.</p>
+            </li>
+        </ul>
+    </div>
+    <section class="video-section">
+        <h2>Informative Videos</h2>
+        <div class="video-container">
+            <<iframe width="560" height="315" src="https://www.youtube.com/embed/kmWbOC8Fbb0?si=ws99B19Kt9vExwdi"
+                frameborder="0" title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6tS5PijjMrU?si=2RSXwRpznPZDH_jc"
+                    frameborder="0" title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+    <?php include '../../topicsfooter.php'; ?>
+</body>
+
+</html>

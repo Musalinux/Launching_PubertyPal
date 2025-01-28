@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background: #fdf2e6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5C362B;
+  padding: 10px 10px;
+  color: white;
+  top: 0;
+  position: sticky;
+  z-index: 999;
+  max-height: 90px;
+}
+
+.logo img {
+  max-height: 70px; /* Adjust the logo to fit within the navbar */
+  width: auto; /* Adjust the width to maintain aspect ratio */
+  cursor: pointer;
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #ff5722;
+}
+
+/* Hero section */
+.hero {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero img {
+  height: 550px;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+.hero-content {
+  display: cent;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  height: 100%;
+  position: relative;
+  padding: 20px;
+  background: #00000048;
+}
+
+.hero-text {
+  color: white; /* or white if you want it to be light */
+  font-size: 50px;
+  font-weight: 900; /* This is the maximum weight, but depends on the font support */
+  text-align: center;
+  position: relative;
+  margin-top: 180px;
+  z-index: 1;
+  transition: transform 0.3s ease;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Black shadow for depth */
+}
+
+
+.hero-subtext {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  color: #e0e0e0; /* A slightly off-white color for the subtext */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* Black shadow for depth */
+}
+
+/*.hero:hover .hero-text {
+  transform: translateY(-20px);
+}
+
+.hero:hover img {
+  transform: scale(1.1);
+}*/
+
+/* Art section */
+.art-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px; /* Adds space between containers */
+  padding: 0 60px; /* Increase horizontal padding */
+  padding-top: 40px;
+  padding-right: 60px;
+  padding-bottom: 40px;
+  padding-left: 60px;
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.art-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+  width: 100%; /* Sets the row width */
+  justify-content: flex-start; /* Aligns containers to the start of the row */
+}
+
+.art-item {
+  flex: 0 0 30%;
+  position: relative;
+  text-align: center;
+  flex-basis: calc(33.333% - 20px); /* Sets width for 3 items in a row, accounting for the gap */
+  margin-bottom: 30px; /* Adds space below each container */
+}
+
+.art-item img {
+  width: 90%;
+  height: 300px;
+  object-fit: fill;
+  border: 2px solid rgb(170, 161, 161);
+  transform: translateY(-10px);
+  box-shadow: 0px 4px 8px rgba(255, 253, 253, 0.9);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.art-item img:hover {
+  transform: translateY(-20px);
+  box-shadow: 0px 8px 16px rgba(255, 255, 255, 0.3);
+}
+
+.artist-options {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(156, 144, 149, 0.9);
+  padding: 15px;
+  transition: background-color 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(100%);
+}
+
+.artist-options #artist-button {
+  background-color: rgba(175, 219, 219, 0.575);
+}
+
+.artist-button:hover {
+  background-color: rgba(83, 145, 152, 0.619);
+  color: rgb(0, 0, 0);
+}
+
+.art-item:hover .artist-options {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+footer {
+  background-color: #5C362B;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer p {
+  margin: 5px 0;
+  line-height: 1.6;
+}
+
+footer img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    text-align: center;
+  }
+
+  footer div {
+    flex-basis: 100%;
+    max-width: none;
+  }
+
+  footer div:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  footer iframe {
+    width: 100%;
+    height: 150px;
+  }
+}

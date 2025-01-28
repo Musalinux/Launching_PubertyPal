@@ -1,0 +1,210 @@
+
+<style>
+    .high-contrast,
+    .high-contrast * {
+        background-color: #1a1a1a !important;
+        color: #f1f1f1 !important;
+    }
+
+    .high-contrast a,
+    .high-contrast a:hover,
+    .high-contrast a:visited {
+        color: #ffcc00 !important;
+    }
+
+    .high-contrast button,
+    .high-contrast input,
+    .high-contrast textarea,
+    .high-contrast select {
+        background-color: #333 !important;
+        color: #FFF !important;
+        border: 1px solid #f1f1f1 !important;
+    }
+
+    .high-contrast header,
+    .high-contrast footer,
+    .high-contrast nav,
+    .high-contrast .navbar,
+    .high-contrast .nav-links a,
+    .high-contrast .navbar a {
+        background-color: #2c2c2c !important;
+  
+        color: #FFF !important;
+    }
+
+    .high-contrast img {
+        filter: grayscale(100%) contrast(130%);
+    }
+
+    #accessibility-widget button {
+        background-color: #4CAF50;
+        color: black;
+        border: none;
+        border-radius: 10px;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.2s, transform 0.2s;
+    }
+
+    #accessibility-widget button:hover {
+        background-color: #367C36;
+        transform: scale(1.05);
+    }
+
+    #accessibility-options {
+        display: none;
+        background: white;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    #accessibility-options button {
+        margin: 5px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        background-color: #f1f1f1;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+
+    #accessibility-options button:hover {
+        background-color: #e0e0e0;
+    }
+
+    footer {
+        background-color: #FFC8DD;
+        color: #f8f9fa;
+        padding: 10px 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        position: bottom;
+        margin-top: 100px;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .footer-section {
+        flex: 1;
+        padding: 0 20px;
+    }
+
+    .footer-section h3 {
+        margin-top: 10px;
+        color: #5C362B;
+    }
+
+    .footer-section p,
+    .footer-section ul {
+        color: black;
+    }
+
+    .footer-section ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer-section ul li a {
+        color: black;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .footer-section ul li a:hover {
+        color: #ffc107;
+    }
+
+    .footer-section a {
+        color: #5C362B;
+    }
+
+    .footer-section a:hover {
+        text-decoration: underline;
+    }
+
+    .footer-section img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        border-radius: 8px;
+        margin: 10px;
+        size: 100px;
+    }
+</style>
+<div id="accessibility-widget" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
+    <button onclick="toggleAccessibilityMenu()"
+        style="background-color: #4CAF50; color: white; border: none; border-radius: 10px; padding: 10px 20px; cursor: pointer; transition: background-color 0.3s;">
+        <i class="fas fa-universal-access"></i> Accessibility Options
+    </button>
+    <div id="accessibility-options">
+        <h4 style="margin-top: 0;">Accessibility Options</h4>
+        <button onclick="increaseFontSize()">Increase Text</button>
+        <button onclick="decreaseFontSize()">Decrease Text</button>
+        <button onclick="toggleHighContrast()">High Contrast</button>
+        <button onclick="resetAccessibility()">Reset</button>
+        <div id="google_translate_element"></div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-section img">
+            <img src="../images/logopal.png" alt="Body">
+        </div>
+        <div class="footer-section links">
+            <h3>Dicover Topics</h3>
+            <ul>
+                <li><a href="home.php"></a></li>
+                <li><a href="./topics/body/learn.php">Learn About Puberty</a></li>
+                <li><a href="./topics/mental/stress.php">Mental Health Awareness</a></li>
+                <li><a href="./topics/body/stages.php">Growth Stages</a></li>
+                <li><a href="./topics/mental/sports.php">Sports during puberty</a></li>
+                <li><a href="./topics/hygiene/hygiene.php"">Sanitary Products</a></li>
+                <li><a href=" ./topics/body/rep.php">Learn the female anatomy</a></li>
+            </ul>
+        </div>
+        <div class="footer-section links">
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="home.php">Home</a></li>
+                <li><a href="resources.php">Resources</a></li>
+                <li><a href="topics.php">Topics</a></li>
+                <li><a href="games.php">Games</a></li>
+                <li><a href="parents.php">For Parents</a></li>
+                <li><a href="charity.php">Charity</a></li>
+                <li><a href="aboutus.php">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section contact">
+            <h3>Copyright &copy; 2024 Puberty Pal.</h3>
+            <p>All rights reserved.</p>
+            <p>Email: <a href="mailto:ayesha.gaikwad2023@uni.strath.ac.uk">ayesha.gaikwad2023@uni.strath.ac.uk</a></p>
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="access.js"></script>
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            includedLanguages: 'en,hi,mr,gu,pa,bn,ml,te,ta',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            autoDisplay: false
+        }, 'google_translate_element');
+    }
+</script>
+<script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>

@@ -1,0 +1,85 @@
+/* exclusives.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* h1 {
+    text-align: center;
+    color: #FFF;
+} */
+
+.art-piece {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.art-piece h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.art-piece img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px; /* Increase margin bottom for better spacing */
+}
+
+.art-piece p {
+    color: #666;
+    margin-bottom: 10px; /* Increase margin bottom for better spacing */
+}
+
+.bid-form {
+    margin-top: 20px; /* Increase top margin for better spacing */
+}
+
+.bid-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.bid-form input[type="text"],
+.bid-form input[type="number"],
+.bid-form input[type="email"] {
+    width: calc(100% - 22px); /* Adjust width to fit better within container */
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s;
+}
+
+.bid-form input[type="text"]:focus,
+.bid-form input[type="number"]:focus,
+.bid-form input[type="email"]:focus {
+    border-color: #4CAF50;
+}
+
+.bid-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.bid-form button:hover {
+    background-color: #45a049;
+}
