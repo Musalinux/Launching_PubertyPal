@@ -72,5 +72,63 @@ Follow these steps to set up the project locally:
 ````bash
 npm start
 ````
+4. Open your browser and navigate to:
+````bash
+http://localhost:3000
+````
+
+## Usage
+The website has the following sections:
+
+Homepage: Introduction to the website and key features.
+Guides: Step-by-step resources for teens, parents, and educators.
+Interactive Tools: Quizzes, surveys, and feedback forms.
+FAQ Section: Answers to frequently asked questions.
+Contact Us: Users can reach out for more information or expert help.
+
+## 🖼️ Screenshots
+Homepage
+
+Interactive Tools
+
+Add real screenshots from your website by replacing these placeholders.
+
+## 🤝 Contributing
+Contributions are welcome! If you'd like to make improvements or suggest new features:
+
+## Fork this repository.
+1. Create a new branch.
+````bash
+git checkout -b feature-branch
+````
+2. Commit your changes.
+````bash
+git commit -m "Add new feature"
+````
+3. Push to the branch.
+````bash
+git push origin feature-branch
+````
+5. Open a pull request.
+   
+## 📝 License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## 🙏 Acknowledgments
+Advisor/Mentor: Special thanks to Professor Gobinda Chowdhury for guidance and feedback.
+Contributors: Ayesha Gaikwad
+Resources: Data and information sourced from reputable health and education organizations.
+Tools: Thanks to all the open-source tools and libraries used in this project.
+
+## 🌐 Live Demo
+Check out the live version of the website: PubertyPal (The website is now down, I will be spinning it back up soon.)
+
+## 💬 Feedback
+We'd love to hear from you! If you have any suggestions, questions, or feedback, feel free to open an issue or contact us directly at:
+
+Email: aisha1dlp@gmail.com
+GitHub Issues: Open an Issue
+
+Thank you for visiting this repository! 😊
 
 
