@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../images/favicon.png" />
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/resources.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Resources Hub</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="../../index.html" class="logo"><img src="../images/logopal.png" alt="Puberty Pal Logo"></a>
+        <ul class="nav-links">
+            <li>
+                <a href="../../index.html">Home</a>
+                <ul class="submenu">
+                    <li><a href="journey.html">Journey</a></li>
+                    <li><a href="parents.html">Parents</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="resources.html">Resource Hub</a>
+                <ul class="submenu">
+                    <li><a href="resources.html">All Resources</a></li>
+                    <li><a href="topics.html">Puberty Topics</a></li>
+                </ul>
+            </li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="charity.html">Charity</a></li>
+            <li><a href="aboutus.html">Say Hi!</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Resources Hub</h1>
+        <div class="filter">
+            <button class="filter-button" onclick="filterResources('all')">All</button>
+            <button class="filter-button" onclick="filterResources('video')">Videos</button>
+            <button class="filter-button" onclick="filterResources('article')">Articles</button>
+        </div>
+    </header>
+
+    <div class="resource-container" id="resource-container">
+        <!-- Resources will be dynamically inserted here -->
+    </div>
+
+    <script>
+        const resources = [
+            { "title": "Puberty for Girls", "type": "article", "url": "https://www.healthdirect.gov.au/puberty-for-girls", "image": "../images/pubgirl.jpg", "summary": "Overview of physical and emotional changes during puberty." },
+            { "title": "Starting your periods", "type": "article", "url": "https://www.nhs.uk/conditions/periods/starting-periods/", "image": "../images/startp.webp", "summary": "Information on menstruation, symptoms, and management." },
+            { "title": "Social media", "type": "article", "url": "https://www.apa.org/topics/social-media-internet/health-advisory-adolescent-social-media-use", "image": "../images/social.jpg", "summary": "Psychological impacts of social media on teens." },
+            { "title": "Menstrual Hygiene", "type": "article", "url": "https://shorturl.at/amsPf", "image": "../images/menhyg.jpg", "summary": "Guidance on proper menstrual hygiene." },
+            { "title": "Women in Sports", "type": "article", "url": "https://womeninsport.org/news/understanding-puberty-and-menstruation-and-its-impact-on-girls-and-sport/", "image": "../images/sports.jpg", "summary": "How puberty and menstruation affect girls in sports." },
+            { "title": "Mental health of adolescents", "type": "article", "url": "https://www.who.int/news-room/fact-sheets/detail/adolescent-mental-health", "image": "../images/mentalhealth.jpg", "summary": "Importance of addressing mental health in adolescents." },
+            { "title": "Reproductive Health", "type": "article", "url": "https://www.niehs.nih.gov/health/topics/conditions/repro-health", "image": "../images/rephealth.jpg", "summary": "Impact of environmental factors on reproductive health." },
+            { "title": "Yoga for adolescents", "type": "article", "url": "https://yoga.ayush.gov.in/WHOCC/Books4/Yoga%20for%20Adolescents.pdf", "image": "../images/yoga.jpg", "summary": "Benefits of yoga for teens' physical and mental health." },
+            { "title": "Adolescents safety and protection", "type": "article", "url": "https://www.unicef.org/adolescence/protection", "image": "../images/abuse.jpg", "summary": "UNICEF's page on adolescent protection and safety." },
+            { "title": "Social media among adolescents", "type": "video", "url": "https://www.youtube.com/embed/Z1BpYDkGoAs", "summary": "How social media influences teen mental health." },
+            { "title": "Self image", "type": "video", "url": "https://www.youtube.com/embed/C9N6k3nfwao", "summary": "Self-image and social media." },
+            { "title": "Puberty Sessions", "type": "video", "url": "https://www.youtube.com/embed/l6evDPsop28", "summary": "Basics of puberty and more." },
+            { "title": "Parent's Guide to Adolescence", "type": "video", "url": "https://www.youtube.com/embed/HMRaun9yRWk", "summary": "Guide for parents handling adolescence." },
+            { "title": "Mental Health", "type": "video", "url": "https://www.youtube.com/embed/tRc4XZXYTgY", "summary": "Youth voices on depression." },
+            { "title": "Sexual Health", "type": "video", "url": "https://www.youtube.com/embed/nHIy04e7Y50", "summary": "Sexual and reproductive health awareness." },
+            { "title": "Sexual reproductive health", "type": "video", "url": "https://www.youtube.com/embed/tOHpsOI02mc", "summary": "Sexual health rights explained." },
+            { "title": "Good touch/bad touch", "type": "video", "url": "https://www.youtube.com/embed/zJdzC1AqpA0", "summary": "Learn about appropriate and inappropriate touch." },
+            { "title": "Choosing Period Products", "type": "video", "url": "https://www.youtube.com/embed/UfK17D0eX5I", "summary": "Different menstrual products available today." }
+        ];
+
+        function displayResources(filter) {
+            const container = document.getElementById('resource-container');
+            container.innerHTML = "";
+
+            resources.forEach(item => {
+                if (filter === 'all' || item.type === filter) {
+                    const resourceDiv = document.createElement('div');
+                    resourceDiv.className = `resource ${item.type}`;
+                    
+                    if (item.type === 'video') {
+                        resourceDiv.innerHTML = `
+                            <iframe src="${item.url}" frameborder="0" allowfullscreen></iframe>
+                        `;
+                    } else {
+                        resourceDiv.innerHTML = `
+                            <img src="${item.image}" alt="Image for ${item.title}">
+                        `;
+                    }
+
+                    resourceDiv.innerHTML += `
+                        <h3><a target="_blank" rel="noopener noreferrer" href="${item.url}">${item.title}</a></h3>
+                        <p>${item.summary}</p>
+                    `;
+
+                    container.appendChild(resourceDiv);
+                }
+            });
+        }
+
+        function filterResources(type) {
+            displayResources(type);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => displayResources('all'));
+    </script>
+
+    <script src="../js/resources.js"></script>
+    <?php include 'footer.php'; ?>
+</body>
+
+</html>
