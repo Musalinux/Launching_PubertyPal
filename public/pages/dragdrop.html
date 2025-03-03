@@ -12,10 +12,10 @@
 
 <body>
     <nav class="navbar">
-        <a href="index.html" class="logo"><img src="../images/logopal.png" alt="Puberty Pal Logo"></a>
+        <a href="../index.html" class="logo"><img src="../public/images/logopal.png" alt="Puberty Pal Logo"></a>
         <ul class="nav-links">
             <li>
-                <a href="index.html">Home</a>
+                <a href="../index.html">Home</a>
                 <ul class="submenu">
                     <li><a href="journey.php">Journey</a></li>
                     <li><a href="parents.php">Parents</a></li>
@@ -99,7 +99,19 @@
         </div>
     </div>
     <script src="../js/dragdrop.js"></script>
-    <?php include 'footer.php'; ?>
+    <script>
+        // Function to dynamically load the footer
+        function loadFooter() {
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.body.insertAdjacentHTML('beforeend', html);
+                })
+                .catch(error => console.error('Error loading footer:', error));
+        }
+    
+        // Call the function to load the footer when the page loads
+        document.addEventListener('DOMContentLoaded', loadFooter);
+    </script>   
 </body>
-
 </html>

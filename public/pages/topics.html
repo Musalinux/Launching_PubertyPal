@@ -11,25 +11,25 @@
 
 <body>
     <nav class="navbar">
-        <a href="index.html" class="logo"><img src="../images/logopal.png" alt="Puberty Pal Logo"></a>
+        <a href="../index.html" class="logo"><img src="../images/logopal.png" alt="Puberty Pal Logo"></a>
         <ul class="nav-links">
             <li>
-                <a href="index.html">Home</a>
+                <a href="../index.html">Home</a>
                 <ul class="submenu">
-                    <li><a href="journey.php">Journey</a></li>
-                    <li><a href="parents.php">Parents</a></li>
+                    <li><a href="journey.html">Journey</a></li>
+                    <li><a href="parents.html">Parents</a></li>
                 </ul>
             </li>
             <li>
-                <a href="resources.php">Resource Hub</a>
+                <a href="resources.html">Resource Hub</a>
                 <ul class="submenu">
-                    <li><a href="resources.php">All Resources</a></li>
-                    <li><a href="topics.php">Puberty Topics</a></li>
+                    <li><a href="resources.html">All Resources</a></li>
+                    <li><a href="topics.html">Puberty Topics</a></li>
                 </ul>
             </li>
-            <li><a href="games.php">Games</a></li>
-            <li><a href="charity.php">Charity</a></li>
-            <li><a href="aboutus.php">Say Hi!</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="charity.html">Charity</a></li>
+            <li><a href="aboutus.html">Say Hi!</a></li>
         </ul>
     </nav>
     <header class="topic-h1">
@@ -39,35 +39,48 @@
         <div class="topic-card">
             <h2>Body</h2>
             <img src="../images/girlbodynew.jpg" alt="Body">
-            <a href="./topics/body/learn.php">Learn About Puberty</a>
+            <a href="./topics/body/learn.html">Learn About Puberty</a>
         </div>
         <div class="topic-card">
             <h2>Mental Health</h2>
             <img src="../images/mental.jpg" alt="Mental Health">
-            <a href="./topics/mental/stress.php">Mental Health Awareness</a>
+            <a href="./topics/mental/stress.html">Mental Health Awareness</a>
         </div>
         <div class="topic-card">
             <h2>Online Safety </h2>
             <img src="../images/tsocial.jpg" alt="Growth">
-            <a href="./topics/mental/socialmedia.php">Staying Safe Online</a>
+            <a href="./topics/mental/socialmedia.html">Staying Safe Online</a>
         </div>
         <div class="topic-card">
             <h2>Sports</h2>
             <img src="../images/kidsport.jpg" alt="Sports">
-            <a href="./topics/mental/sports.php">Sports During puberty</a>
+            <a href="./topics/mental/sports.html">Sports During puberty</a>
         </div>
         <div class="topic-card">
             <h2>Hygiene</h2>
             <img src="../images/girlhygnew.jpg" alt="Hygiene">
-            <a href="./topics/hygiene/hygiene.php">Sanitary Products</a>
+            <a href="./topics/hygiene/hygiene.html">Sanitary Products</a>
         </div>
         <div class="topic-card">
             <h2>Reproductive Health</h2>
             <img src="../images/sexualh.jpg" alt="Sexual Health">
-            <a href="./topics/body/rep.php">Learn The Female Anatomy</a>
+            <a href="./topics/body/rep.html">Learn The Female Anatomy</a>
         </div>
     </div>
-    <?php include 'footer.php'; ?>
+    <script>
+        // Function to dynamically load the footer
+        function loadFooter() {
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.body.insertAdjacentHTML('beforeend', html);
+                })
+                .catch(error => console.error('Error loading footer:', error));
+        }
+    
+        // Call the function to load the footer when the page loads
+        document.addEventListener('DOMContentLoaded', loadFooter);
+    </script>   
 </body>
 
 </html>
