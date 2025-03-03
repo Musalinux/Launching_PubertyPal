@@ -85,11 +85,23 @@
     </div>
 
     <script src="../pubic/js/home.js"></script>
+    <script src="../public/pages/access.js"></script>
 
     <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2025 Puberty Pal. All Rights Reserved.</p>
-    </footer>
+    <script>
+        // Function to dynamically load the footer
+        function loadFooter() {
+            fetch('../pulic/pages/footer.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.body.insertAdjacentHTML('beforeend', html);
+                })
+                .catch(error => console.error('Error loading footer:', error));
+        }
+    
+        // Call the function to load the footer when the page loads
+        document.addEventListener('DOMContentLoaded', loadFooter);
+    </script>   
 
 </body>
 
