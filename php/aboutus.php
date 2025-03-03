@@ -17,10 +17,10 @@ include 'conn.php'; // Include the database connection file
 
 <body>
     <nav class="navbar">
-        <a href="home.php" class="logo"><img src="../images/logopal.png" alt="Puberty Pal Logo"></a>
+        <a href="./index.html" class="logo"><img src="../public/images/logopal.png" alt="Puberty Pal Logo"></a>
         <ul class="nav-links">
             <li>
-                <a href="home.php">Home</a>
+                <a href="./index.html">Home</a>
                 <ul class="submenu">
                     <li><a href="journey.php">Journey</a></li>
                     <li><a href="parents.php">Parents</a></li>
@@ -49,7 +49,7 @@ include 'conn.php'; // Include the database connection file
                 educational content and community support.</p>
             <h2>Our Team</h2>
             <div class="team-member">
-                <img src="../images/ayesha.jpg" alt="Team Member 1">
+                <img src="../public/images/ayesha.jpg" alt="Team Member 1">
                 <h3>Ayesha Gaikwad</h3>
                 <p>Ayesha is a seasoned software architect and the brains behind this company. With 5 years of
                     experience as a Web developer, she is the pioneer in shaping Puberty Pal
