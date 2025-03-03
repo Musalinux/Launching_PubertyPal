@@ -187,7 +187,7 @@
         <div class="footer-section links">
             <h3>Dicover Topics</h3>
             <ul>
-                <li><a href="home.php"></a></li>
+                <li><a href="index.html"></a></li>
                 <li><a href="../../topics/body/learn.php">Learn About Puberty</a></li>
                 <li><a href="../../topics/mental/stress.php">Mental Health Awareness</a></li>
                 <li><a href="../../topics/body/stages.php">Growth Stages</a></li>
@@ -199,7 +199,7 @@
         <div class="footer-section links">
             <h3>Navigation</h3>
             <ul>
-                <li><a href="../../home.php">Home</a></li>
+                <li><a href="../../index.html">Home</a></li>
                 <li><a href="../../resources.php">Resources</a></li>
                 <li><a href="../../topics.php">Topics</a></li>
                 <li><a href="../../games.php">Games</a></li>

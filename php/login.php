@@ -107,7 +107,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <body>
     <div class="navbar">
-        <a href="home.php" class="logo"><img src="../resources/logo.jpg" alt="ArtVue Logo"></a>
+        <a href="index.html" class="logo"><img src="../resources/logo.jpg" alt="ArtVue Logo"></a>
     </div>
 
     <div class="form-container">

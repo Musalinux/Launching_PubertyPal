@@ -18,7 +18,7 @@ include 'conn.php'; // Include the database connection file
 
 <body>
   <nav class="navbar">
-    <a href="home.php" class="logo"><img src="../resources/logo.jpg" alt="ArtVue Logo"></a>
+    <a href="index.html" class="logo"><img src="../resources/logo.jpg" alt="ArtVue Logo"></a>
     <ul class="nav-links">
       <li><a href="explore.php">Explore</a></li>
       <li><a href="resources.php">Resources</a></li>

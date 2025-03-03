@@ -11,10 +11,10 @@
 
 <body>
     <nav class="navbar">
-        <a href="home.php" class="logo"><img src="../images/logopal.png" alt="Puberty Pal Logo"></a>
+        <a href="index.html" class="logo"><img src="../images/logopal.png" alt="Puberty Pal Logo"></a>
         <ul class="nav-links">
             <li>
-                <a href="home.php">Home</a>
+                <a href="index.html">Home</a>
                 <ul class="submenu">
                     <li><a href="journey.php">Journey</a></li>
                     <li><a href="parents.php">Parents</a></li>
