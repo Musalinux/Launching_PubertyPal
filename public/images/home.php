@@ -1,4 +1,3 @@
-<p?php include 'conn.php' ; // Include the database connection file ?>
 
   <!DOCTYPE html>
   <html lang="en">
@@ -15,25 +14,25 @@
 
   <body>
     <nav class="navbar">
-      <a href="home.php" class="logo"><img src="../images/logopal.png" alt="Puberty Pal Logo"></a>
+      <a href="home.html" class="logo"><img src="../images/logopal.png" alt="Puberty Pal Logo"></a>
       <ul class="nav-links">
         <li>
-          <a href="home.php">Home</a>
+          <a href="home.html">Home</a>
           <ul class="submenu">
-            <li><a href="journey.php">Journey</a></li>
-            <li><a href="parents.php">Parents</a></li>
+            <li><a href="journey.html">Journey</a></li>
+            <li><a href="parents.html">Parents</a></li>
           </ul>
         </li>
         <li>
-          <a href="resources.php">Resource Hub</a>
+          <a href="resources.html">Resource Hub</a>
           <ul class="submenu">
-            <li><a href="resources.php">All Resources</a></li>
-            <li><a href="topics.php">Puberty Topics</a></li>
+            <li><a href="resources.html">All Resources</a></li>
+            <li><a href="topics.html">Puberty Topics</a></li>
           </ul>
         </li>
-        <li><a href="games.php">Games</a></li>
-        <li><a href="charity.php">Charity</a></li>
-        <li><a href="aboutus.php">Say Hi!</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="charity.html">Charity</a></li>
+        <li><a href="aboutus.html">Say Hi!</a></li>
       </ul>
     </nav>
 
@@ -41,14 +40,14 @@
       <div class="hero-content">
         <h1 class="hero-text">Puberty Pal</h1>
         <p class="hero-subtext">Navigating puberty, together</p>
-        <a href="explore.php" class="explore-button section">Explore!</a>
+        <a href="explore.html" class="explore-button section">Explore!</a>
       </div>
     </section>
 
     <section class="grow-image">
       <div>
         <h1 class="grow-text section">Her Journey, Her Growth!</h1>
-        <a href="journey.php" class="learn-more section">Learn More</a>
+        <a href="journey.html" class="learn-more section">Learn More</a>
       </div>
     </section>
 
@@ -92,7 +91,6 @@
       </ul>
     </div>
     <script src="../js/home.js"></script>
-    <?php include 'footer.php'; ?>
   </body>
 
   </html>
