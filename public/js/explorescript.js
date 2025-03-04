@@ -1,24 +1,24 @@
 document.addEventListener("DOMContentLoaded", function() {
     const tags = [
-        { name: "normal mood swings", url: "./topics/body/learn.php" },
-        { name: "learning about girls' bodies", url: "./topics/body/learn.php" },
-        { name: "where babies come from", url: "./topics/body/rep.php" },
-        { name: "Tanner stages", url: "./topics/body/stages.php" },
-        { name: "managing own period", url: "./topics/hygiene/hygiene.php" },
-        { name: "using social media", url: "./topics/mental/socialmedia.php" },
-        { name: "mental wellness", url: "./topics/mental/stress.php" },
-        { name: "sports tips", url: "./topics/mental/sports.php" },
-        { name: "using a tampon", url: "./topics/hygiene/hygiene.php" },
-        { name: "body hair", url: "./topics/body/learn.php" },
-        { name: "what's a uterus?", url: "./topics/body/rep.php" },
-        { name: "interacting with new people", url: "./topics/mental/socialmedia.php" },
-        { name: "playing with a pad on", url: "./topics/mental/sports.php" },
-        { name: "menstrual cups", url: "./topics/hygiene/hygiene.php" },
-        { name: "development of breasts", url: "./topics/body/learn.php" },
-        { name: "stages of puberty", url: "./topics/body/stages.php" },
-        { name: "period discomfort", url: "./topics/body/rep.php" },
-        { name: "sanitary napkins", url: "./topics/hygiene/hygiene.php" },
-        { name: "managing stress", url: "./topics/mental/stress.php" }
+        { name: "normal mood swings", url: "./topics/body/learn.html" },
+        { name: "learning about girls' bodies", url: "./topics/body/learn.html" },
+        { name: "where babies come from", url: "./topics/body/rep.html" },
+        { name: "Tanner stages", url: "./topics/body/stages.html" },
+        { name: "managing own period", url: "./topics/hygiene/hygiene.html" },
+        { name: "using social media", url: "./topics/mental/socialmedia.html" },
+        { name: "mental wellness", url: "./topics/mental/stress.html" },
+        { name: "sports tips", url: "./topics/mental/sports.html" },
+        { name: "using a tampon", url: "./topics/hygiene/hygiene.html" },
+        { name: "body hair", url: "./topics/body/learn.html" },
+        { name: "what's a uterus?", url: "./topics/body/rep.html" },
+        { name: "interacting with new people", url: "./topics/mental/socialmedia.html" },
+        { name: "playing with a pad on", url: "./topics/mental/sports.html" },
+        { name: "menstrual cups", url: "./topics/hygiene/hygiene.html" },
+        { name: "development of breasts", url: "./topics/body/learn.html" },
+        { name: "stages of puberty", url: "./topics/body/stages.html" },
+        { name: "period discomfort", url: "./topics/body/rep.html" },
+        { name: "sanitary napkins", url: "./topics/hygiene/hygiene.html" },
+        { name: "managing stress", url: "./topics/mental/stress.html" }
         
     ];
     const tagsContainer = document.getElementById("tagsContainer");
