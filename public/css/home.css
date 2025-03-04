@@ -130,45 +130,43 @@ body {
   padding: 275px 0;
   background: url("../images/finbg.jpg") no-repeat center center/cover;
   color: white;
-  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-text {
   font-size: 3em;
   color: #5C362B;
   padding: 5px;
-  position: absolute;
-  top: 17.5%;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: transform 0.3s ease-out;  
+  transition: transform 0.3s ease-out;
 }
 
 .hero-text:hover {
-  transform: translateX(-50%) scale(1.1);
+  transform: scale(1.1);
 }
 
 .hero-subtext {
   font-size: 1.5em;
   color: #5C362B;
   margin-bottom: 20px;
-  position: absolute;
-  top: 26.5%;
-  left: 50%;
-  transform: translateX(-50%);
   transition: transform 0.3s ease-out;
 }
 
 .hero-subtext:hover {
-  transform: translateX(-50%) scale(1.05);
+  transform: scale(1.05);
 }
 
-
 .explore-button {
-  position: absolute;
-  top: 85%;
-  left: 50%;
-  transform: translateX(-50%);
   background-color: black;
   color: white;
   text-decoration: none;
@@ -177,14 +175,49 @@ body {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
-  text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s;; 
+  transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s;
 }
-
 
 .explore-button:hover {
   background-color: pink;
-  color: black
+  color: black;
+}
+
+/* Grow Section Fix */
+.grow-image {
+  text-align: center;
+  padding: 300px;
+  margin: 100px 0;
+  background: url("../images/grow.jpg") no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.grow-text {
+  font-size: 2.5em;
+  color: #5C362B;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.learn-more {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s;
+}
+
+.learn-more:hover {
+  background-color: pink;
+  color: black;
 }
 
 
@@ -194,49 +227,6 @@ body {
   object-fit: cover;
   margin: 50px 0;
 }
-
-.grow-image {
-  text-align: center;
-  padding: 300px;
-  margin: 100px 0;
-  background: url("../images/grow.jpg") no-repeat center center/cover;
-  object-fit: cover;
-  color: white;
-  background-size: cover;
-}
-
-.grow-text {
-  font-size: 2.5em;
-  position: absolute;
-  color: #5C362B;
-  position: absolute;
-  top: 115%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.learn-more {
-  position: absolute;
-  top: 185%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: black;
-  color: white;
-  text-decoration: none;
-  border: none;
-  border-radius: 20px;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s;; 
-}
-
-.learn-more:hover {
-  background-color: pink;
-  color: black
-}
-
 
 .section.animate .explore-button,
 .section.animate .learn-more {
