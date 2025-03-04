@@ -124,7 +124,6 @@ body {
   background-color: #FFC8DD;
 }
 
-
 .hero {
   text-align: center;
   padding: 275px 0;
@@ -134,14 +133,15 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh; /* Full viewport height */
+  height: 100vh;
+  position: relative; /* Needed for absolute positioning */
 }
 
 .hero-content {
-  display: flex;
-  flex-direction: column;
-  align-items: top;
-  justify-content: center;
+  position: absolute;
+  top: 5%; /* Adjusts the heading placement */
+  text-align: center;
+  width: 100%;
 }
 
 .hero-text {
@@ -158,7 +158,7 @@ body {
 .hero-subtext {
   font-size: 1.5em;
   color: #5C362B;
-  margin-bottom: 20px;
+  margin-top: -10px;
   transition: transform 0.3s ease-out;
 }
 
@@ -166,47 +166,19 @@ body {
   transform: scale(1.05);
 }
 
-.explore-button {
-  background-color: black;
-  align-items: bottom;
-  color: white;
-  text-decoration: none;
-  border: none;
-  border-radius: 20px;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s;
-}
-
-.explore-button:hover {
-  background-color: pink;
-  color: black;
-}
-
-/* Grow Section Fix */
-.grow-image {
-  text-align: center;
-  padding: 300px;
-  margin: 100px 0;
-  background: url("../images/grow.jpg") no-repeat center center/cover;
-  display: flex;
-  flex-direction: column;
-  align-items: top;
-  justify-content: center;
-  height: 100vh;
-}
-
+/* Positioning 'Her Journey, Her Growth' at the top */
 .grow-text {
+  position: absolute;
+  top: 10%;
   font-size: 2.5em;
   color: #5C362B;
   text-align: center;
-  margin-bottom: 20px;
+  width: 100%;
 }
 
+/* Adjusting Learn More button position */
 .learn-more {
   background-color: black;
-  align-items: bottom;
   color: white;
   text-decoration: none;
   border: none;
@@ -215,13 +187,14 @@ body {
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s;
+  position: absolute;
+  bottom: 15%; /* Adjust this to place it below the knees */
 }
 
 .learn-more:hover {
   background-color: pink;
   color: black;
 }
-
 
 .gif-image {
   width: 100%;
