@@ -138,7 +138,7 @@ body {
   color: #5C362B;
   padding: 5px;
   position: absolute;
-  top: 3.5%;
+  top: 7%;
   left: 50%;
   transform: translateX(-50%);
   transition: transform 0.3s ease-out;  
@@ -153,7 +153,7 @@ body {
   color: #5C362B;
   margin-bottom: 20px;
   position: absolute;
-  top: 6%;
+  top: 15%;
   left: 50%;
   transform: translateX(-50%);
   transition: transform 0.3s ease-out;
@@ -166,7 +166,7 @@ body {
 
 .explore-button {
   position: absolute;
-  top: 20%;
+  top: 50%;
   left: 50%;
   transform: translateX(-50%);
   background-color: black;
@@ -210,14 +210,14 @@ body {
   position: absolute;
   color: #5C362B;
   position: absolute;
-  top: 28%;
+  top: 65%;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .learn-more {
   position: absolute;
-  top: 45%;
+  top: 155%;
   left: 50%;
   transform: translateX(-50%);
   background-color: black;
