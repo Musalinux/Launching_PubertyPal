@@ -149,8 +149,10 @@
         <button onclick="decreaseFontSize()">Decrease Text</button>
         <button onclick="toggleHighContrast()">High Contrast</button>
         <button onclick="resetAccessibility()">Reset</button>
-        <div id="google_translate_element"></div>
-    </div>
+        <div id="translate-container">
+            <div id="google_translate_element"></div> 
+        </div>
+    </div>    
 </div>
 
 <!-- Footer -->
@@ -195,6 +197,7 @@
 
 
 <script src="access.js"></script>
+
 <script type="text/javascript">
     function googleTranslateElementInit() {
         new google.translate.TranslateElement({

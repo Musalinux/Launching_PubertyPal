@@ -1,7 +1,3 @@
-<?php
-include 'conn.php'; // Include the database connection file
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +10,7 @@ include 'conn.php'; // Include the database connection file
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
-        /* Additional styles specific to games.php */
+        /* Additional styles specific to games.html */
         .games-container {
             display: flex;
             justify-content: space-around;
@@ -57,14 +53,14 @@ include 'conn.php'; // Include the database connection file
 
 <body>
     <nav class="navbar">
-        <a href="home.php" class="logo"><img src="../images/logopal.png" alt="Puberty Pal Logo"></a>
+        <a href="home.html" class="logo"><img src="../images/logopal.png" alt="Puberty Pal Logo"></a>
         <ul class="nav-links">
-            <li><a href="topics.php">Topics</a></li>
-            <li><a href="resources.php">Resources</a></li>
-            <li><a href="games.php">Games</a></li>
-            <li><a href="journey.php">Journey</a></li>
-            <li><a href="charity.php">Charity</a></li>
-            <li><a href="aboutus.php">Say Hi!</a></li>
+            <li><a href="topics.html">Topics</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="journey.html">Journey</a></li>
+            <li><a href="charity.html">Charity</a></li>
+            <li><a href="aboutus.html">Say Hi!</a></li>
         </ul>
     </nav>
 
@@ -72,15 +68,15 @@ include 'conn.php'; // Include the database connection file
         <div class="game-container">
             <h2>Pop Quiz</h2>
             <p>Test your knowledge with our interactive quiz!</p>
-            <a href="quiz.php">Start Quiz</a>
+            <a href="quiz.html">Start Quiz</a>
         </div>
         <div class="game-container">
             <h2>Interactive Drag & Drop Game</h2>
             <p>Sort the items into categories in this fun game!</p>
-            <a href="dragdrop.php">Play Game</a>
+            <a href="dragdrop.html">Play Game</a>
         </div>
     </div>
-    <?php include 'footer.php'; ?>
+    <?html include 'footer.html'; ?>
 </body>
 
 </html>

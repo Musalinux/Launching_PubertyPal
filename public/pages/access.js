@@ -7,6 +7,15 @@ function toggleAccessibilityMenu() {
     options.style.display = (options.style.display === 'block') ? 'none' : 'block';
 }
 
+function moveGoogleTranslateWidget() {
+    const translateElement = document.getElementById('google_translate_element');
+    const accessibilityMenu = document.getElementById('accessibility-options');
+
+    if (translateElement && accessibilityMenu) {
+        accessibilityMenu.appendChild(translateElement); // Moves the widget inside the menu
+    }
+}
+
 function increaseFontSize() {
     let fontSize = parseInt(localStorage.getItem('fontSize') || 100);
     fontSize += 10;
