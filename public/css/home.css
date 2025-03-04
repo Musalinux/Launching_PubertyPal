@@ -166,7 +166,36 @@ body {
   transform: scale(1.05);
 }
 
+.explore-button {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s;
+}
+
+.explore-button:hover {
+  background-color: pink;
+  color: black;
+}
+
 /* Positioning 'Her Journey, Her Growth' at the top */
+.grow-image {
+  text-align: center;
+  padding: 300px;
+  margin: 100px 0;
+  background: url("../images/grow.jpg") no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
 .grow-text {
   position: absolute;
   top: 10%;
