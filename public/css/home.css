@@ -166,6 +166,8 @@ body {
   transform: scale(1.05);
 }
 
+
+/* Explore Button */
 .explore-button {
   background-color: black;
   color: white;
@@ -183,7 +185,7 @@ body {
   color: black;
 }
 
-/* Positioning 'Her Journey, Her Growth' at the top */
+/* Grow Section */
 .grow-image {
   text-align: center;
   padding: 300px;
@@ -194,18 +196,22 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  position: relative;
 }
 
+/* "Her Journey, Her Growth" Text */
 .grow-text {
   position: absolute;
-  top: 10%;
-  font-size: 2.5em;
+  top: 40px; /* Fixed position relative to screen */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3vw; /* Responsive font size */
   color: #5C362B;
   text-align: center;
-  width: 100%;
+  width: 90vw;
 }
 
-/* Adjusting Learn More button position */
+/* Learn More Button */
 .learn-more {
   background-color: black;
   color: white;
@@ -217,7 +223,9 @@ body {
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s;
   position: absolute;
-  bottom: 15%; /* Adjust this to place it below the knees */
+  bottom: 15vh; /* Positioned below the knees */
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .learn-more:hover {
