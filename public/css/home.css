@@ -174,11 +174,11 @@ body {
   text-decoration: none;
   border: none;
   border-radius: 20px;
-  padding: 15px 20px;
+  padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
   position: absolute; 
-  top: calc(100px + 2vh); 
+  top: calc(100px + 4vh); 
   left: 50%; 
   transform: translateX(-50%); 
   transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s;
