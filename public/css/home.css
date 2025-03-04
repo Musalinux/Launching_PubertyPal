@@ -170,10 +170,6 @@ body {
 /* Explore Button */
 .explore-button {
   background-color: black;
-  align-items: center;
-  justify-content: center;
-  height: 75vh;
-  position: relative;
   color: white;
   text-decoration: none;
   border: none;
@@ -181,9 +177,18 @@ body {
   padding: 15px 20px;
   font-size: 16px;
   cursor: pointer;
-  bottom: 15vh;
+  position: absolute; 
+  top: calc(100px + 2vh); 
+  left: 50%; 
+  transform: translateX(-50%); 
   transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s;
 }
+
+.explore-button:hover {
+  background-color: pink;
+  color: black;
+}
+
 
 .explore-button:hover {
   background-color: pink;
