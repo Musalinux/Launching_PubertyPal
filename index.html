@@ -84,13 +84,13 @@
         </ul>
     </div>
 
-    <script src="./public/pages/access.js"></script>
+    <script src="/public/pages/access.js"></script>
 
     <!-- Footer Section -->
     <script>
         // Function to dynamically load the footer
         function loadFooter() {
-            fetch('../pulic/pages/footer.html')
+            fetch('/pulic/pages/footer.html')
                 .then(response => response.text())
                 .then(html => {
                     document.body.insertAdjacentHTML('beforeend', html);
@@ -102,7 +102,7 @@
         document.addEventListener('DOMContentLoaded', loadFooter);
     </script>   
 
-    <script src="./pubic/js/home.js"></script>
+    <script src="/pubic/js/home.js"></script>
 </body>
 
 </html>
