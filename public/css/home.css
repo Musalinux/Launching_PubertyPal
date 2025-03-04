@@ -170,6 +170,10 @@ body {
 /* Explore Button */
 .explore-button {
   background-color: black;
+  align-items: center;
+  justify-content: center;
+  height: 130vh;
+  position: relative;
   color: white;
   text-decoration: none;
   border: none;
